@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Course Browse • UndoSchool</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-logo">🎓</div>
+        <span class="brand-text">UndoSchool</span>
+      </div>
+      <nav class="nav">
+        <a href="#" class="nav-link">Explore</a>
+        <a href="#" class="nav-link">Categories</a>
+        <a href="#" class="nav-link">Teachers</a>
+        <button class="btn primary">Get Started</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <div class="hero-image-left">
+          <div class="stat-bubble stat-courses">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Courses</div>
+          </div>
+          <div class="stat-bubble stat-rating">
+            <div class="stat-icon">🎓</div>
+            <div>
+              <div class="stat-number">4.9</div>
+              <div class="stat-label">Rating</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-center">
+        <h1 class="hero-title">Learn a New Skill</h1>
+        <h2 class="hero-subtitle">Everyday, Anytime, and Anywhere.</h2>
+        <p class="hero-description">Bite-sized lessons, expert teachers, and fun projects — learn at your pace.</p>
+
+        <div class="search-container">
+          <div class="search-input-wrapper">
+            <span class="search-icon">🔍</span>
+            <input id="searchInput" type="search" placeholder="What do you want to learn today?" aria-label="Search courses">
+          </div>
+          <select id="filterLevel" class="level-select" aria-label="Filter level">
+            <option value="all">All levels</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+          <button id="searchBtn" class="btn search-btn">Search</button>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-image-right">
+          <div class="stat-bubble stat-kids">
+            <div class="stat-icon">�</div>
+            <div>
+              <div class="stat-number">10k+</div>
+              <div class="stat-label">Happy kids</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="age-section">
+    <div class="container">
+      <h2 class="section-title">How old are you?</h2>
+      <div class="age-list" id="ageList"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>New Launches ✨</h2>
+        <a href="#" class="see-all">See all</a>
+      </div>
+
+      <div class="card-grid" id="newLaunches"></div>
+    </div>
+  </section>
+
+  <section class="section alt-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Courses 🌟</h2>
+        <a href="#" class="see-all">See all</a>
+      </div>
+
+      <div class="card-grid" id="featuredCourses"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Learn from top teachers</h2>
+        <a href="#" class="see-all">All teachers</a>
+      </div>
+
+      <div class="teacher-row" id="teacherRow"></div>
+    </div>
+  </section>
+
+  <section class="section alt-bg">
+    <div class="container">
+      <div class="section-header">
+        <h2>Webinar starting in 24 hrs</h2>
+        <a href="#" class="see-all">Register</a>
+      </div>
+
+      <div class="card-grid" id="webinars"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Popular Categories</h2>
+      <p class="section-subtitle">Pick what you love most! These categories have everything you need to learn something awesome ✨</p>
+      
+      <div class="category-cards" id="categoryCards"></div>
+      
+      <div class="category-courses" id="categoryCourses"></div>
+    </div>
+  </section>
+
+  <section class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">Browse by class time</h2>
+      <div class="time-filters" id="timeFilters"></div>
+      <div class="filtered-courses" id="filteredCourses"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> UndoSchool</div>
+      <div class="footer-links">Built with ♥</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
